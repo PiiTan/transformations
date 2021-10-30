@@ -14,7 +14,9 @@ object WordCount {
     log.info("Application Initialized: " + spark.sparkContext.appName)
 
     val inputPath = if(!args.isEmpty) args(0) else "./src/test/resources/data/words.txt"
-    val outputPath = if(args.length > 1) args(1) else "./target/test-" + LocalDateTime.now()
+    val unixTime = System.currentTimeMillis() / 1000L
+    val outputPath = if(args.length > 1) args(1) else "./target/test-" + unixTime
+    // previously LocalDateTime.now()
 
     run(spark, inputPath, outputPath)
 
