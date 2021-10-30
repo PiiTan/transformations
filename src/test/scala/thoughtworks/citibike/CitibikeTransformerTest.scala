@@ -48,7 +48,7 @@ class CitibikeTransformerTest extends DefaultFeatureSpecWithSpark {
         .fields.map(fieldToFieldIgnoringNullable))
     }
 
-    ignore("Citibike Advanced Acceptance Test") {
+    scenario("Citibike Advanced Acceptance Test") {
       val rootDirectory = Files.createTempDirectory(this.getClass.getName + "Citibike")
       val ingestedDir = rootDirectory.resolve("ingest")
       val transformedDir = rootDirectory.resolve("transform")

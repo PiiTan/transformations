@@ -52,3 +52,8 @@ Currently this application is a skeleton with ignored tests.  Please unignore th
 
 #### Tips
 - For distance calculation, consider using [**Harvesine formula**](https://en.wikipedia.org/wiki/Haversine_formula) as an option.  
+
+### Dockerized runs
+This repository's run.sh assume that Dockerize Hadoop is running before a job is submitted
+
+Please refer to this repo https://github.com/krithikabalu/CommunityPricingProject
